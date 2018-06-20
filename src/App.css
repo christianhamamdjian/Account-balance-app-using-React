@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+}
+.App li{
+  list-style: none;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+#income{
+background : #ddd;
+}
+#expense{
+  background :#abc;
+}
+#income, #expense {
+  padding: 30px 0px 50px;
+}
+span{
+  margin: 20px;
+}
+input, button{
+  margin: 10px;
+}
+#lists{
+  display:grid;
+  min-height:200px;
+  grid-gap:10px;
+  margin:20px;
+  grid-template-columns: 1fr 1fr;
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@media screen and (max-width: 1024px) {  
+  #lists{
+    grid-template-columns: 1fr;
+  }
+  
+  }
+@media screen and (max-width: 768px) {  
+
+  #lists{
+    grid-template-columns: 1fr;
+  }
+
+}
